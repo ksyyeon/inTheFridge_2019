@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_menu1"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:checked="false"
+            android:title="홈"/>
+
+        <item
+            android:id="@+id/navigation_menu2"
+            android:icon="@android:drawable/ic_menu_camera"
+            android:checked="false"
+            android:title="사진인식" />
+
+        <item
+            android:id="@+id/navigation_menu3"
+            android:icon="@android:drawable/ic_menu_search"
+            android:checked="false"
+            android:title="검색" />
+
+        <item
+            android:id="@+id/navigation_menu4"
+            android:icon="@drawable/sauce"
+            android:checked="false"
+            android:title="소스" />
+    </group>
+</menu>
+

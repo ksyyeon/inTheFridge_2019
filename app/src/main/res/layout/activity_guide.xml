@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="99dp"
+        android:background="#E95E5F"
+        android:gravity="center"
+        android:text="소스창을 길게 눌러보세요!"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/Iv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="96dp"
+        android:src="@drawable/menu" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="329dp"
+        android:background="#E95E5F"
+        android:gravity="center"
+        android:text="다양한 기능을 활용해보세요"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="141dp"
+        android:layout_marginBottom="167dp"
+        android:background="#E95E5F"
+        android:text="원하는 소스를 추가해보세요!"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="670dp"
+        android:background="#E95E5F"
+        android:text="ON/OFF로 유통기한 정렬이 가능해요"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/point3"
+        android:layout_width="22dp"
+        android:layout_height="69dp"
+        android:layout_below="@id/tv1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/point" />
+
+    <ImageView
+        android:id="@+id/point"
+        android:layout_width="22dp"
+        android:layout_height="69dp"
+        android:layout_below="@+id/tv2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-168dp"
+        android:layout_marginEnd="88dp"
+        android:src="@drawable/point" />
+
+    <ImageView
+        android:id="@+id/point2"
+        android:layout_width="22dp"
+        android:layout_height="69dp"
+        android:layout_below="@+id/tv4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="419dp"
+        android:layout_marginEnd="43dp"
+        android:src="@drawable/point" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:srcCompat="@drawable/close"
+        app:useCompatPadding="true" />
+
+</RelativeLayout>

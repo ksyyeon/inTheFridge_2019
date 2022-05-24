@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item1"
+        android:title="유통기한 자동 입력" />
+
+    <item
+        android:id="@+id/item5"
+        android:title="유통기한 직접 입력" />
+
+    <item
+        android:id="@+id/item2"
+        android:title="소스 선택" />
+
+    <item
+        android:id="@+id/item3"
+        android:title="선택 해제" />
+
+    <item
+        android:id="@+id/item4"
+        android:title="소스 삭제" />
+
+
+</menu>

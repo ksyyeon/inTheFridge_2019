@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/ScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:id="@+id/ScrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="270dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/rech1"
+                        android:layout_width="411dp"
+                        android:layout_height="match_parent"
+                        android:padding="0sp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/potato"
+                        android:onClick="mOnClick"/>
+
+                    <ImageButton
+                        android:id="@+id/rech2"
+                        android:layout_width="411dp"
+                        android:layout_height="match_parent"
+                        android:padding="0sp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/honghab"
+                        android:onClick="mOnClick"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/ridibooks"
+                    android:text="  오늘의 추천"
+                    android:textColor="#000000"
+                    android:textSize="20sp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/ridibooks"
+                    android:text=" __"
+                    android:textColor="#B22222"
+                    android:textSize="20sp"></TextView>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/rec2"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:padding="0sp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/omlet"
+                android:onClick="mOnClick"/>
+
+            <ImageButton
+                android:id="@+id/rec3"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:padding="0sp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/curry"
+                android:onClick="mOnClick"/>
+
+            <ImageButton
+                android:id="@+id/rec4"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:padding="0sp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mandoo"
+                android:onClick="mOnClick"/>
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/menu_bottom" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
