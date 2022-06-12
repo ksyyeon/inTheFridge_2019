@@ -8,7 +8,7 @@
 ## Envrioment
 * Android Studio
 * Java
-* XAMPP (PHP + Apache)
+* PHP + Apache
 * MySql Workbench
 ## Prerequite
 * Google Cloud Vision API
